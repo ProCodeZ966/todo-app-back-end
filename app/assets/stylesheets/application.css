@@ -52,3 +52,18 @@ input{
 button{ 
     font-size: 18px;
 }
+
+
+h2{color:orange;}
+
+
+a {
+    font-size: 24px;
+    color: white;
+}
+a:hover { 
+    background-color: #006624 }
+
+input{ 
+    font-size: 18px;
+}
