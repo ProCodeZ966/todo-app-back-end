@@ -15,9 +15,18 @@
  */
 h1{color:orange;}
 html{font-family: "Comic Sans MS";
-    background-image: url("https://assets.vg247.com/current//2017/01/titanfall_2_live_fire-2.jpg")
-
+background-image: url("https://assets.vg247.com/current//2017/01/titanfall_2_live_fire-2.jpg");
 }
+
+html, body { margin: 0; padding: 0; }
+
+* { margin-top: 0; }
+
+.index {
+      background-image: url("https://assets.vg247.com/current//2017/01/titanfall_2_live_fire-2.jpg");
+      min-height: 100vh;
+}
+
 #mytitle {
     color: orange
 }

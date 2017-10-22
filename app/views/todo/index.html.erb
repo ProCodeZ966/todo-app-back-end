@@ -1,31 +1,13 @@
+<div class="index">
 <h1 id="mytitle">My To-Do List</h1>
-  <ul>
+<ul>
+<% @todos.each do |todo| %>
    <li class="list-item">
     <input type="checkbox">
-    <a href="/todo/show/1" >get groceries</a>
-    
+   <a href="/todo/show/<%= todo.id %>" ><%= todo.task_name %></a>
+    <a href="/todo/show/<%= todo.id %>" ><%= todo.due_date %></a>
     </li>
-   <li class="list-item">
-    <input type="checkbox">
-     <a href="/todo/show/2" >get milk</a>
-     
-    </li>
-   <li class="list-item">
-    <input type="checkbox">
-    <a href="/todo/show/3" >get mom</a>
-    </li>
-   <li class="list-item">
-    <input type="checkbox">
-    <a href="/todo/show/5" >get car</a>
-    </li>
-   <li class="list-item">
-    <input type="checkbox">
-   <a href="/todo/show/4" >get food</a>
-    </li>
-  </ul>
-  <input type="text" placeholder="Add To-Do">
-   <input type="date" button="Calender">
-   <input type="time" button="clock">
-  
-  <button>Save To-Do</button>
-  
+<% end %>
+</ul>
+<a href="/todo/new" >Create New To-Do</a>
+</div>
